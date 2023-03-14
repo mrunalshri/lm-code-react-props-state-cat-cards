@@ -89,7 +89,9 @@ function App(): JSX.Element {
       <Header />
 
       <main>
-        <div className="cards__wrapper"></div>
+        <div className="cards__wrapper">
+          <CatCard />
+        </div>
       </main>
 
       <Footer />
