@@ -94,6 +94,12 @@ function App(): JSX.Element {
       favFoods: ["milk"],
       birthYear: 2021,
     },
+    {
+      name: "Captain Catface",
+      species: "Sea Cattain",
+      favFoods: ["fish, rum"],
+      birthYear: 2016,
+    },
   ]);
 
   const [imageData, setImageData] = useState<Array<CatImageData>>([
@@ -198,7 +204,7 @@ function App(): JSX.Element {
   return (
     <>
       <Navbar />
-      <Header />
+      <Header catCount={cats.length} />
 
       <main>
         <div className="cards__wrapper">
